@@ -1,7 +1,7 @@
 # LLM-based_CAMD
 Python algorithm implementation for LLM-based Cryptographic API Misuse Detection, featuring both standard prompt and CoT prompt templates for LLMs. It supports single code file detection and debugging, as well as batch detection for folders. Batch folder detection outputs the results in a CSV-formatted table.
 1. **Environment Setup:**
-   It is recommended to use **Python 3.10** as the runtime environment in PyCharm. Before executing either the batch detection or single file detection programs, please install the required dependency modules listed in `requirements.txt` using the `pip install module_name` command.
+   - It is recommended to use **Python 3.10** as the runtime environment in PyCharm. Before executing either the batch detection or single file detection programs, please install the required dependency modules listed in `requirements.txt` using the `pip install module_name` command.
 2. **Batch Detection Programs:**
    - `Batch_Cryptographic_API_Misuse_Detection-with_CoT.py` is the batch detection program **with Chain-of-Thought (CoT) prompting**.
    - `Batch_Cryptographic_API_Misuse_Detection-without_CoT.py` is the batch detection program **without Chain-of-Thought (CoT) prompting**.
