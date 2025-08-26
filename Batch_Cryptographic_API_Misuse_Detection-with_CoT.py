@@ -3,7 +3,7 @@ import csv
 import re
 import time
 import requests
-import rules.rule_source as ru
+import rule_source as ru
 import argparse
 from pathlib import Path
 from tqdm import tqdm
@@ -352,4 +352,5 @@ if __name__ == "__main__":
     API_Key = 'sk-cvjxxxx'  # Please fill in your own SiliconFlow API key.
 
     batch_analyze(folder_path, 'py', model_name, API_Key, 1)
+
 
