@@ -334,16 +334,48 @@ if __name__ == "__main__":
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
 
-    folder_path = './pysafe_trapfile'     # folder path be analyzed
-    # folder_path = './py_full_unsafe'  # folder path be analyzed
+    # folder_path = './pysafe_trapfile'     # folder path be analyzed
+    folder_path = './py_full_unsafe'  # folder path be analyzed
 
-    # model_name = 'deepseek-ai/DeepSeek-V3'
-    model_name = 'moonshotai/Kimi-K2-Instruct'  # model name from SiliconFlow page: https://cloud.siliconflow.cn/sft-143zof85kk/models
+    model_name = 'deepseek-ai/DeepSeek-V3.1-Terminus'
+    # model_name = 'moonshotai/Kimi-K2-Instruct'  # model name from SiliconFlow page: https://cloud.siliconflow.cn/sft-143zof85kk/models
 
     API_Key = 'sk-cvjxxxx'  # Please fill in your own SiliconFlow API key.
 
     batch_analyze(folder_path, 'py', model_name, API_Key, 1)
 
+    # # model_name = 'moonshotai/Kimi-K2-Instruct'
+    # model_name = 'deepseek-ai/DeepSeek-V3.1-Terminus'
+    # API_Key = 'sk-cvjxxxx'  # Please fill in your own SiliconFlow API key.
+    # # file_path = './py_full_unsafe/rule_13_Global_1.py'
+    # # file_path = './py_full_unsafe/rule_17_Field-Sensitive_1.py'
+    # # file_path = './pysafe_trapfile/Trap_Import_xml.etree_rule_15_trapfile_1.py'
+    # file_path = './pysafe_trapfile/Trap_Import_Field-Sensitive_pyDes_rule_09_trapfile_5.py'
+    #
+    # rule_groups = load_security_rules('py')
+    # code_content = read_code_file(str(file_path))
+    # prompt = prepare_prompt(code_content, rule_groups)  # 传入rule_groups
+    # print(prompt)
+    # start_time = time.perf_counter()
+    # raw_result = analyze_with_llm(prompt, model_name, API_Key)
+    # print("*" * 10)
+    # print(raw_result)
+    # print(type(raw_result))
+    #
+    # fd = parse_analysis_result(raw_result, file_path)
+    # print(fd)
+    #
+    # end_time = time.perf_counter()
+    # elapsed_time = end_time - start_time
+    #
+    # # 转换为分和秒
+    # minutes = int(elapsed_time // 60)
+    # seconds = elapsed_time % 60
+    #
+    # if minutes > 0:
+    #     print(f"检测耗时: {minutes}分{seconds:.2f}秒")
+    # else:
+    #     print(f"检测耗时: {seconds:.2f}秒")
 
 
 
