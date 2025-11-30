@@ -4,7 +4,11 @@ Python algorithm implementation for LLM-based Cryptographic API Misuse Detection
    - It is recommended to use **Python 3.10** as the runtime environment in PyCharm. Before executing either the batch detection or single file detection programs, please install the required dependency modules listed in `requirements.txt` using the `pip install module_name` command.
 2. **Batch Detection Programs:**
    - `Batch_Cryptographic_API_Misuse_Detection-with_CoT.py` is the batch detection program **with Chain-of-Thought (CoT) prompting**.
-   - `Batch_Cryptographic_API_Misuse_Detection-without_CoT.py` is the batch detection program **without Chain-of-Thought (CoT) prompting**.
+   - `Batch_Cryptographic_API_Misuse_Detection-without_CoT.py` is the batch detection program **without CoT prompting**.
+   - `Batch_Cryptographic_API_Misuse_Detection-with_CoT-ex1.py` is the batch detection program **with Step 1 removed CoT prompting**.
+   - `Batch_Cryptographic_API_Misuse_Detection-with_CoT-ex2.py` is the batch detection program **with Step 2 removed CoT prompting**.
+   - `Batch_Cryptographic_API_Misuse_Detection-with_CoT-ex3.py` is the batch detection program **with Step 3 removed CoT prompting**.
+   - `Batch_Cryptographic_API_Misuse_Detection-with_CoT-ex4.py` is the batch detection program **with Step 4 removed CoT prompting**.
      **Important:** Insert your own **SiliconFlow API Key** into the program before running it. If you don't have a key, you can apply for and create one at <https://cloud.siliconflow.cn/me/models>.
 3. **Test Case Folders & Batch Execution:**
    - The `py_full_unsafe` folder contains **228 vulnerability test cases** sourced from PyCryptoBench.
